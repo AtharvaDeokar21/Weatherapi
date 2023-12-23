@@ -3,8 +3,8 @@ import json
 from PIL import Image, ImageFont, ImageDraw
 from datetime import date
   
-api_key = "2305d4e86f2c2a7f2474c8fbddde756d"
-position = [705, 1020, 1340, 1655, 1975]
+api_key = "2305xxxxxxxxx" #Enter your own API key 
+position = [705, 1020, 1340, 1655, 1975] #Y-axis co-ordinates
 
 uk_list = ["London", "Manchester", "Edinburgh", "Bristol", "Birmingham"]
 india_list = ["Jaipur", "Delhi", "Mumbai", "Kolkata", "Chennai"]
@@ -12,7 +12,7 @@ us_list = ["New York", "Chicago", "San Francisco", "Los Angeles", "San Diego"]
 country_list = [uk_list, india_list, us_list]
 
 for country in country_list:
-    image = Image.open("my.png") 
+    image = Image.open("my.png") #Selecting the Image 
     draw = ImageDraw.Draw(image)
 
     font = ImageFont.truetype("inter.ttf",size=100)
